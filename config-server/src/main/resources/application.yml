@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo

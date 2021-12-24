@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hello-service
+  config:
+    import: "optional:configserver:"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    config:
+      discovery:
+        enabled: true
+        service-id: cloud-config-server
+
+server:
+  port: 8100
+management:
+  server:
+    port: 9100
+  endpoints:
+    web:
+      exposure:
+        include: health
