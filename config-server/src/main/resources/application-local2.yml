@@ -1,0 +1,9 @@
+server:
+  port: 8201
+management:
+  server:
+    port: 9201
+  endpoints:
+    web:
+      exposure:
+        include: health
