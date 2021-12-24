@@ -98,3 +98,7 @@ fabric.properties
 
 /spring-cloud.iml
 /.idea/
+/backend-hello-service/target/
+/config-server/target/
+/consul/
+/gateway/target/

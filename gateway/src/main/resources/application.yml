@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "cloud-gateway"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: hello-service
+          uri: lb://hello-service
+          predicates:
+            - Path=/hello/**
+          filters:
+            - RewritePath=/hello/?(?<segment>.*), /$\{segment}
+server:
+  port: 8000
