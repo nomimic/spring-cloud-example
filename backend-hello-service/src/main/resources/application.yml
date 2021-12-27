@@ -11,6 +11,8 @@ spring:
       discovery:
         enabled: true
         service-id: cloud-config-server
+      username: user
+      password: 1234
 
 server:
   port: 8100
