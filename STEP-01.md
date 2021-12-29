@@ -8,7 +8,7 @@
 
 ```bash
 consul agent -server -bootstrap -ui -client=0.0.0.0 -data-dir ${CUSTOM_CONSOL_DATA_DIR}
-ex) consul agent -server -bootstrap -ui -client=0.0.0.0 -data-dir ./consul/data
+ex) consul agent -server -bootstrap -ui -client=0.0.0.0 -bind 127.0.0.1 -data-dir ./consul/data
 ```
 
 ## Config Server
