@@ -1,0 +1,16 @@
+{
+  "service": {
+    "name": "jaeger-collector",
+    "tags": [
+      "jaeger",
+      "collector"
+    ],
+    "port": 19411,
+    "check": {
+      "name": "Jaeger",
+      "http": "http://localhost:14269",
+      "interval": "5s",
+      "timeout": "2s"
+    }
+  }
+}
