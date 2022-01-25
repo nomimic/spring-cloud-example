@@ -100,5 +100,5 @@ fabric.properties
 /.idea/
 /backend-hello-service/target/
 /config-server/target/
-/consul/
+/consul/data/
 /gateway/target/

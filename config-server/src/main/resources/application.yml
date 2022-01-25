@@ -14,7 +14,8 @@ spring:
       name: user
       password: 1234
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://jaeger-collector/
+    discovery-client-enabled: true
 
 encrypt:
   key: 1234567890
